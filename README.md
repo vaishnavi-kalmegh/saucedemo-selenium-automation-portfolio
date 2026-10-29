@@ -24,40 +24,43 @@ Expected values for the public demo store (product names, prices, the 8% tax rat
 
 ## Framework structure
 
-~~~
-saucedemo-selenium-automation/
-â”œâ”€â”€ .github/workflows/tests.yml
-â”œâ”€â”€ docs/images/                         # Real Selenium evidence screenshots
-â”‚   â”œâ”€â”€ login-page.png
-â”‚   â”œâ”€â”€ inventory-page.png
-â”‚   â””â”€â”€ pytest-report.png
-â”œâ”€â”€ data/                                # Expected values for the demo store
-â”‚   â”œâ”€â”€ catalog.py                       # Products, prices, tax rate, sort options
-â”‚   â””â”€â”€ users.py                         # Public demo accounts
-â”œâ”€â”€ pages/
-â”‚   â”œâ”€â”€ base_page.py
-â”‚   â”œâ”€â”€ login_page.py
-â”‚   â”œâ”€â”€ inventory_page.py
-â”‚   â”œâ”€â”€ product_detail_page.py
-â”‚   â”œâ”€â”€ cart_page.py
-â”‚   â”œâ”€â”€ checkout_page.py
-â”‚   â””â”€â”€ menu_page.py                     # Burger menu: logout, reset app state
-â”œâ”€â”€ reports/
-â”‚   â””â”€â”€ screenshots/                     # Failure screenshots; git-ignored
-â”œâ”€â”€ scripts/
-â”‚   â””â”€â”€ capture_portfolio_screenshots.py
-â”œâ”€â”€ tests/
-â”‚   â”œâ”€â”€ test_login.py
-â”‚   â”œâ”€â”€ test_inventory.py
-â”‚   â”œâ”€â”€ test_product_details.py
-â”‚   â”œâ”€â”€ test_cart.py
-â”‚   â”œâ”€â”€ test_checkout.py
-â”‚   â””â”€â”€ test_session.py
-â”œâ”€â”€ conftest.py
-â”œâ”€â”€ pytest.ini
-â”œâ”€â”€ requirements.txt
-â””â”€â”€ README.md
-~~~
+```text
+saucedemo-selenium-automation-portfolio/
+├── .github/
+│   └── workflows/
+│       └── tests.yml
+├── docs/
+│   └── images/                         # Real Selenium evidence screenshots
+│       ├── login-page.png
+│       ├── inventory-page.png
+│       └── pytest-report.png
+├── data/                               # Expected values for the demo store
+│   ├── catalog.py                      # Products, prices, tax rate, sort options
+│   └── users.py                        # Public demo accounts
+├── pages/
+│   ├── base_page.py
+│   ├── login_page.py
+│   ├── inventory_page.py
+│   ├── product_detail_page.py
+│   ├── cart_page.py
+│   ├── checkout_page.py
+│   └── menu_page.py                    # Burger menu: logout, reset app state
+├── reports/
+│   └── screenshots/                    # Failure screenshots; git-ignored
+├── scripts/
+│   └── capture_portfolio_screenshots.py
+├── tests/
+│   ├── test_login.py
+│   ├── test_inventory.py
+│   ├── test_product_details.py
+│   ├── test_cart.py
+│   ├── test_checkout.py
+│   └── test_session.py
+├── conftest.py
+├── pytest.ini
+├── requirements.txt
+└── README.md
+```
 
 ### Page Object Model
 
